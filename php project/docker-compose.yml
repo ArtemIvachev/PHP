@@ -4,13 +4,14 @@ services:
     image: mysql
     container_name: mysql
     restart: always
+    volumes:
+      - "./database/init.sql:/docker-entrypoint-initdb.d/1.sql"
+    
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: rootbase
       MYSQL_USER: root
-      MYSQL_PASSWORD:root
-    volumes:
-      - "./database/init.sql:/docker-entrypoint-initdb.d/1.sql"
+      MYSQL_PASSWORD: root
     ports:
       - 8806:3306
 
