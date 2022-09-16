@@ -8,7 +8,7 @@ services:
       - "./database/init.sql:/docker-entrypoint-initdb.d/1.sql"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: rootbase
+      MYSQL_DATABASE: root
       MYSQL_USER: root
       MYSQL_PASSWORD: root
     ports:
