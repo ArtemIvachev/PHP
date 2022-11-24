@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .img-wrap {
+            position: static;
+        }
+        .img-wrap h1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .white {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            font-weight: bold;
+            padding: 430px;
+        }
+    </style>
+    <title>KINOTEMA | Главная</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+    />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">KINOTEMA</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupporteddContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.php">Афиша</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vacancy.php">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Информация</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/admin.php">Билеты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container text-center">
+    <div class="row justify-content-xs-center">
+        <h1 style="color: #222222">Добро пожаловать на KINOTEMA!</h1>
+        <button class="theme-toggle" style="background-color: blueviolet"><i class="fa-regular fa-lightbulb"></i></button>
+        <button class="lang-toggle" style="background-color: burlywood"><i class="fa-solid fa-language"></i></button>
+        <p><span id="name_span"></span>, пошли в кино!</p>
+        <label for="name_field">Введите ваше имя:</label>
+        <input id="name_field" type="text" />
+        <button class="set-name-button" style="background-color: cornsilk">Отправить</button>
+    </div>
+</div>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>
